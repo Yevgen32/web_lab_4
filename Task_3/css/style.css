@@ -1,22 +1,35 @@
+body{
+	font-size: 16px;
+	font-family: 'Cuprum', sans-serif;
+}
+h1{
+	font-size: 28px;
+	text-align: center;
+}
 .container {
 	max-width: 800px;
-	width: 100%;
-	padding: 0 10px 50px 10px;
+	width: 98%;
+	padding: 0 2% 5% 2%;
 	margin: 0 auto;
 }
 img{
-		width: 22%;
+	width: 186px;
+	height: 186px;
 }
 .img1{
+	width: 22%;
+	height: auto;
 
 }
 .img2{
-
-	
+	width: 22%;
+	height: auto;
 }
 .img3{
-
+	width: 22%;
+	height: auto;
 }
 .img4{
-
+	width: 22%;
+	height: auto;
 }
