@@ -5,39 +5,46 @@ body{
 h1{
 	font-size: 28px;
 	text-align: center;
+
+}
+.center{
+	text-align: center;
 }
 .container {
 	margin: 1.5em 0;
     padding: 0;
-    column-gap: 1.5em; /* Общее расстояние между колонками */
+    column-gap: 1.5em; 
     font-size: .85em;
-    -moz-column-gap: 1.5em; /* Расстояние между колонками для Firefox */
-    -webkit-column-gap: 1.5em; /* Расстояние между колонками  для Safari, Chrome и iOS */
+    -moz-column-gap: 1.5em; 
+    -webkit-column-gap: 1.5em; 
 }
-
-.order img {
-  margin: 0 0 0 50%;
-  position: relative;
-  left: -100px;
+.center_1{
+    color: #72767a;
+	text-align: center;
+    border-bottom: 2px solid #d3d3d3; 
+    font-weight: normal; 
+    padding-bottom: 10%; 
 }
 .order img {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
 }
 .order a {
+	text-align: center;
 	text-decoration: none;
 	color: #359CC6;
-	margin: 0 10px;
+
 }
 .order{
+	height: 38	0px;
 	display: inline-block;
     background: #fff;
     padding: 1em;
     margin: 0 0 1.5em;
     width: 100%;
-    box-sizing: border-box; /* Изменения алгоритма расчета ширины и высоты элемента.*/
-    -moz-box-sizing: border-box; /* Для Firefox */ 
-    -webkit-box-sizing: border-box; /* Для Safari, Chrome, iOS иAndroid */ 
+    box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
     border: 1px solid #d3d3d3
 }
 @media only screen and (min-width: 400px) {
