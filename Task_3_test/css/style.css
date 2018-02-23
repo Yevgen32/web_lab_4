@@ -15,7 +15,8 @@ h1{
 	float: left;
 }
 .container {
-	margin: 1.5em 0;
+    position: absolute;
+	margin: 3em 0;
     padding: 0;
     column-gap: 1.5em; 
     font-size: .85em;
@@ -30,19 +31,6 @@ h1{
 .center_bold{
 	text-align: center;
 	font-weight:bold;
-}
-.road{
-    position: absolute;
-    left: 120%;
-    height: 80px;
-	border-radius: 50%;
-	color: white;
-	background-color:#86b022
-}
-.road1{
-	border-radius: 50%;
-	color: white;
-	background-color:#009de1;
 }
 .button_1{
     color: white;
@@ -78,7 +66,7 @@ h1{
 }
 .order{
 	height: 420px;
-	display: inline-block;
+	display: inline-block; /* что бы запустить в хроме нужно убрать inline-block */
     background: #fff;
     padding: 1em;
     margin: 0 0 1.5em;
@@ -88,12 +76,79 @@ h1{
     -webkit-box-sizing: border-box; 
     border: 1px solid #d3d3d3
 }
+@media only screen and (min-width: 300px) {
+    .container {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+    .road{
+    position: absolute;
+    left: 70%;
+    top: -2%;
+    height: 80px;
+    border: 0;
+	border-radius: 50%;
+	color: white;
+	background-color:#86b022
+	}
+	.road1{
+    height: 75px;
+    position: absolute;
+    left: 65%;
+    top: 49%;
+    border: 0;
+	border-radius: 50%;
+	color: white;
+	background-color:#009de1;
+	}
+    .road2{
+    position: absolute;
+    left: 65%;
+    top: 73%;
+    border: 0;
+    height: 80px;
+	border-radius: 50%;
+	color: white;
+	background-color:#009de1;
+	}
+}
 @media only screen and (min-width: 400px) {
     .container {
         -moz-column-count: 2;
         -webkit-column-count: 2;
         column-count: 2;
     }
+    .road{
+    position: absolute;
+    left: 33%;
+    top: -5%;
+    height: 80px;
+    border: 0;
+	border-radius: 50%;
+	color: white;
+	background-color:#86b022
+	}
+	.road1{
+    height: 75px;
+    position: absolute;
+    left: 80%;
+    top: -5%;
+    border: 0;
+	border-radius: 100%;
+	color: white;
+	background-color:#009de1;
+	}
+    .road2{
+    position: absolute;
+    left: 80%;
+    top: 45%;
+    border: 0;
+    height: 80px;
+	border-radius: 50%;
+	color: white;
+	background-color:#009de1;
+	}
 }
 @media only screen and (min-width: 700px) {
     .container {
@@ -101,6 +156,36 @@ h1{
         -webkit-column-count: 3;
         column-count: 3;
     }
+    .road{
+    position: absolute;
+    left: 20%;
+    top: -5%;
+    height: 80px;
+	border-radius: 50%;
+	border: 0;
+	color: white;
+	background-color:#86b022
+	}
+	.road1{
+    position: absolute;
+    left: 50%;
+    top: -5%;
+    height: 75px;
+	border-radius: 100%;
+	border: 0;
+	color: white;
+	background-color:#009de1;
+	}
+    .road2{
+    position: absolute;
+    left: 50%;
+    top: 44%;
+    border: 0;
+    height: 80px;
+	border-radius: 50%;
+	color: white;
+	background-color:#009de1;
+	}
 }
 @media only screen and (min-width: 900px) {
     .container {
@@ -108,6 +193,36 @@ h1{
         -webkit-column-count: 4;
         column-count: 4;
     }
+    .road{
+    position: absolute;
+    left: 15%;
+    top: -10%;
+    height: 80px;
+	border-radius: 50%;
+	color: white;
+	background-color:#86b022;
+	border: 0;
+	}
+	.road1{
+    position: absolute;
+    left: 63%;
+    top: -11%;
+    height: 80px;
+	border-radius: 50%;
+	color: white;
+	border: 0;
+	background-color:#009de1;
+	}
+    .road2{
+    position: absolute;
+    left: 90%;
+    top: -11%;
+    height: 80px;
+	border-radius: 50%;
+	color: white;
+	background-color:#009de1;
+	border: 0;
+	}
 }
  
 @media only screen and (min-width: 1100px) {
@@ -116,13 +231,76 @@ h1{
         -webkit-column-count: 5;
         column-count: 5;
     }
-}
-.wrapper{
+    .road{
     position: absolute;
+    left: 11%;
+    top: -11%;
+    height: 80px;
+	border-radius: 50%;
+	color: white;
+	background-color:#86b022
+	border: 0;
+	}
+	.road1{
+    position: absolute;
+    left: 50%;
+    top: -11%;
+    height: 80px;
+	border-radius: 50%;
+	color: white;
+	background-color:#009de1;
+	border: 0;
+	}
+    .road2{
+    position: absolute;
+    left: 71%;
+    top: -11%;
+    height: 80px;
+	border-radius: 50%;
+	color: white;
+	background-color:#009de1;
+	border: 0;
+	}
 }
+
 @media only screen and (min-width: 1280px) {
     .wrapper {
-        
         width: 1260px;
+    }
+    .road{
+    position: absolute;
+    left: 11%;
+    top: -12%;
+    height: 80px;
+	border-radius: 50%;
+	color: white;
+	background-color:#86b022
+	border: 0;
+    }
+    .road1{
+    position: absolute;
+    left: 51%;
+    top: -10%;
+    height: 80px;
+	border-radius: 50%;
+	color: white;
+	background-color:#009de1;
+	border: 0;
+	}
+    .road2{
+    position: absolute;
+    left: 71%;
+    top: -11%;
+    height: 80px;
+	border-radius: 50%;
+	color: white;
+	background-color:#009de1;
+	border: 0;
+	}
+
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .order {
+    	display: block;
     }
 }
