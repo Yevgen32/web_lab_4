@@ -228,7 +228,7 @@ h1{
 @media only screen and (min-width: 1100px) {
     .container {
         -moz-column-count: 5;
-        -webkit-column-count: 5;
+        -webkit-column-count: 4;
         column-count: 5;
     }
     .road{
@@ -301,6 +301,41 @@ h1{
 }
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     .order {
-    	display: block;
+        display: block;
     }
+    .container {
+    -webkit-column-count: 4;
+    column-count: 4;
+}
+    .road{
+    position: absolute;
+    left: 14%;
+    top: -12%;
+    height: 80px;
+    border-radius: 50%;
+    color: white;
+    background-color:#86b022
+    border: 0;
+    }
+    .road1{
+    position: absolute;
+    left: 64%;
+    top: -12%;
+    height: 80px;
+    border-radius: 50%;
+    color: white;
+    background-color:#009de1;
+    border: 0;
+    }
+    .road2{
+    position: absolute;
+    left: 87%;
+    top: -12%;
+    height: 80px;
+    border-radius: 50%;
+    color: white;
+    background-color:#009de1;
+    border: 0;
+    }
+}
 }
