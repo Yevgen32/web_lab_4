@@ -3,24 +3,86 @@
 	padding: 0;
 }
 .full {
+	margin: 0 auto;
 	font-size: 0;
-	border: 1px solid gray;
 	max-width: 800px;
 	width: 100%;
-
+}
+h1{
+	font-size: 28px;
+	text-align: center;
+	margin-bottom:20px; 
 }
 
 .slider{
-
+	position: absolute;
 	max-width: 600px;
 	width: 100%;
 	margin: 0 auto;
-	border: 1px solid #000;
-	
-
+	border: 0.5px solid #000;
 }
-
+.button_1{
+    color: white;
+	background-color: #cc3399;
+    height: 40px;
+    width: 80%;
+    border: 0;
+}
+.button_2{
+    font-weight:bold;
+	background-color: #f0e524;
+    height: 40px;
+    width: 80%;
+    border: 0;
+}
+.road{
+    position: absolute;
+    left: 60%;
+    top: 9%;
+    height: 50px;
+    border: 0;
+	border-radius: 50%;
+	color: white;
+	background-color:#86b022
+	}
+.road1{
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 9%;
+    border: 0;
+	border-radius: 50%;
+	color: white;
+	background-color:#009de1;
+	}
+.road2{
+    position: absolute;
+    left: 50%;
+    top: 9%;
+    border: 0;
+    height: 50px;
+	border-radius: 50%;
+	color: white;
+	background-color:#009de1;
+	}
+.text_line{
+	text-decoration:line-through;
+	display:inline-block;
+	font-size: 12px;
+}
+.text_bold{
+	font-weight:bold;
+	display: inline-block;
+}
+.text_none{
+	text-decoration: none; 
+}
+.inviz{
+    visibility:hidden;
+}
 .item{
+	position: relative;
+	border-right: 0.5px solid; 
 	display: inline-block;
 	padding: 5px;
 	box-sizing: border-box;
@@ -28,14 +90,29 @@
 	min-height: 330px;
 	overflow: hidden;
 }
+.item_img img{
+	width: 130px;
+	height: 140px;
 
+}
 .item_description{
 	padding: 10px;
 }
 .item_head, .item_name, .item_coast, .item_description{
 	text-align: center;
 }
-
+.item_name{
+	font-weight:bold;
+	text-decoration: none;
+	color: #359CC6;
+}
+.item_head{
+	color: #72767a;
+	text-align: center;
+    border-bottom: 2px solid #d3d3d3; 
+    font-weight: normal; 
+    padding-bottom: 10%; 
+}
 .item_head, .item_name, .item_coast{
 	padding: 10px 0;
 	font-size: 14px;
